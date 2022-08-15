@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            width: 300px;
+            height: 300px;
+            background-color: aqua;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <img src="" >
+    </div>
+
+    <button onclick="changecolor()">Change Color</button>
+    <button onclick="changesize()">change size </button>
+    <button onclick="addimage()">add image</button>
+    <button onclick="removeimage()">remove image</button>
+
+    <script>
+        function changecolor() {
+            document.querySelector('.container').style.backgroundColor = "green";
+        }
+
+        function changesize() {
+            document.querySelector('.container').style.width = "50px";
+            document.querySelector('.container').style.height = "50px";
+        }
+
+        function addimage() {
+            document.querySelector('.container img').setAttribute("src", "https://t3.ftcdn.net/jpg/02/91/52/22/360_F_291522205_XkrmS421FjSGTMRdTrqFZPxDY19VxpmL.jpg");
+        }
+
+        function removeimage() {
+            document.querySelector('.container img').setAttribute("src", "");
+        }
+    </script>
+</body>
+
+</html>
